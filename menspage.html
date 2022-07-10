@@ -1,40 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #container{
-            display: flex;
-            width: 50%;
-            height: auto;
-            border: 1px solid blue;
-            margin: auto;
+        body {
+        margin: 0;
+        padding: 0;
         }
-        #container>div{
-            margin:auto;
-        }
+      #container {
+        display: flex;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #container > div {
+        margin: auto;
+      }
+      #container > div > div{
+        font-size: 20px;
+      }
+      .text{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+      }
+      .text h2+p{
+        text-decoration: line-through;
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+       .text p{
+       color: #696a6a;
+    }
+
+      h2+h2{
+        color: #696a6a;
+        margin-bottom: -20px;
+        margin-top: -15px;
+      }
+      img{
+        margin-left:100px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <div>
-            <img src="https://m.media-amazon.com/images/I/71m0W58-zQL._AC_UL480_FMwebp_QL65_.jpg" alt="jeans"/>
-            <h2>Pause</h2>
-            <h2>Mens Cotton Long Jeans</h2>
-            <h2>$700 <p style="text-decoration: line-through;">$1499</p>70%</h2>
+      <div>
+        <img
+          src="https://m.media-amazon.com/images/I/71m0W58-zQL._AC_UL480_FMwebp_QL65_.jpg"
+          alt="jeans"
+        />
+       <div>
+         <h2>Pause</h2>
+        <h2>Mens Cotton Long Jeans Pack Of 1</h2>
+        <div class="text">
+          <h2>$700</h2>
+          <p>$1499</p>
+          <p>-50%</p>
         </div>
+       </div>
+      </div>
+      <div>
+        <img
+          src="https://m.media-amazon.com/images/I/81-BXDBJQIL._AC_UL480_FMwebp_QL65_.jpg"
+          alt="jeans"
+        />
         <div>
-            <img src="https://m.media-amazon.com/images/I/81-BXDBJQIL._AC_UL480_FMwebp_QL65_.jpg" alt="jeans"/>
-            <h2>Pause</h2>
-            <h2>Mens Cotton Long Jeans</h2>
-            <h2>$700 <p style="text-decoration: line-through;">$1499</p>70%</h2>  
+        <h2>JUBINATION</h2>
+        <h2>Mens Cotton Long Jeans Pack Of 1</h2>
+        <div class="text">
+          <h2>$700</h2>
+          <p>$1499</p>
+          <p>-50%</p>
         </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-
-
-    
